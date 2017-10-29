@@ -1,0 +1,37 @@
+label {
+    display: block;
+}
+
+.user {
+    padding: 1px;
+}
+
+.tweet {
+    display: flex;
+    width: 20%;
+    margin: 1em;
+    flex-direction: row;
+}
+
+.tweeter-avatar {
+    flex: 1;
+}
+
+.tweeter-username {
+    flex: 1;
+    margin: auto;
+}
+
+.navbar *{
+    color: white;
+}
+
+.tweet-text {
+    flex: 1.5;
+    margin: auto;
+}
+
+.ofekImg {
+    width: 2ch;
+    size: 2ch;
+}
