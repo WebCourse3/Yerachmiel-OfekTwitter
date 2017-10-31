@@ -1,34 +1,14 @@
 (function () {
 
-	function assert(value, name) {
-		if(value === true) {
-			this.color = 'green';
-		} else {
-			this.color = 'red';
-		}
-
-	}
-
-	function test_group('testName',
-		function(value, name){})
-
-test_group('test1', assert(){
-	
-	});
-
-
-/*--------------------------------------------------------*/
-	test_group('WALLA AVARTI',
+	test_group('Index testing',
 		function () {
-			var tweets = [1,2,3];
-			addTweet();
+			var firstLength = oldTwitts.length;
+			addTwitt('yerac', 'hi...');
 
-			assert(tweets.length === 4, 'blablabla');
-			assert(true, 'blablabla');
-			assert(true, 'blablabla');
+			assert(oldTwitts.length === firstLength + 1, 'Check adding tweet');
+			assert(true, 'Check publish button');
+			assert(true, 'Check links');
 		});
-
-
 
 	function test_group(groupName, assertsFunction) {
 		this.panelDiv = document.createElement('div');
@@ -40,17 +20,9 @@ test_group('test1', assert(){
 		htmlBody[0].appendChild(this.panelDiv);
 
 		console.log(this);
-
+		// assertsFunction();
 		assertsFunction.bind(this)();
 	}
-
-	test_group();
-
-	function Dog(){
-
-	}
-
-	new Dog();
 
 	function assert(testPassed, testName) {
 		var testDiv = document.createElement('div');
@@ -70,10 +42,4 @@ test_group('test1', assert(){
 
 		return testDiv;
 	}
-
-
-
-
-
-
 }())

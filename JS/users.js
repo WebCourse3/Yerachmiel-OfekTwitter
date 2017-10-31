@@ -3,19 +3,6 @@ window.onload = function () {
 	loadUsers();
 };
 
-usrUnfollow =
-	[
-		{imgSrc: "../images/avatar.png", userName: "User1"},
-		{imgSrc: "../images/avatar.png", userName: "User2"},
-		{imgSrc: "../images/avatar.png", userName: "User3"},
-		{imgSrc: "../images/avatar.png", userName: "User4"},
-		{imgSrc: "../images/avatar.png", userName: "User5"}
-	];
-
-usrFollow =
-	[
-	];
-
 function loadUsers() {
 	usrUnfollow.forEach(function (element) {
 		addUser(element.imgSrc, element.userName, "usrUnfollow");
